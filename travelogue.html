@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <title>Travelog</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#Stanley">Stanley</a>
+            <a href="#Crescent">Crescent</a>
+            <a href="#Chelsea">Chelsea</a>
+        
+            <!-- Add a visually hidden label for accessibility -->
+            <label class="switch">
+                <!-- The visually hidden label text -->
+                <span class="sr-only">Toggle Dark Mode</span>
+                <input type="checkbox" onclick="toggleDarkMode()">
+                <span class="slider round"></span>
+            </label>
+        </nav>
+        
+        <div class="nav-toggle" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+        <img class="hero-image" src="assets/haunted-hotel.jpg" alt="Abandoned hotel in a forest in the dark"> 
+        <figcaption>
+            Photo by <a href="https://www.pexels.com/photo/abandoned-hotel-in-darkness-21563001/">Zakhar Vozhdaienko</a>
+        </figcaption>
+    
+        <div class="hero-text">
+            <h1>Top 3 most haunted hotels</h1> 
+            <h2>And Their Stories</h2>
+        </div>
+    </header>
+    
+    <main>
+        
+        <section id="Stanley">
+            <h2>1. The Stanley Hotel</h2>
+            <figure>
+                <img src="assets/trolley-man.jpg" alt="a man in uniform leaning on a trolley in a hotel hallway">
+                <figcaption>
+                    Photo by <a href="https://www.pexels.com/photo/porter-leaning-on-a-trolley-5371575/">cottonbro studio</a>
+                </figcaption>
+            </figure>
+            <p>The Stanley Hotel, located in Estes Park, Colorado, is a historic landmark with a fascinating past. Built in 1909 by Freelan Oscar Stanley, the co-inventor of the Stanley Steamer automobile, the hotel was designed as a luxury resort catering to wealthy travelers. Stanley and his wife Flora moved to Estes Park to improve his health, and the hotel quickly became a symbol of opulence in the Rockies. Its elegant Georgian architecture and stunning mountain views made it a popular retreat. However, the hotel gained international fame after author Stephen King stayed there in 1974, inspiring his bestselling novel *The Shining*, which later became a classic horror film. Today, the Stanley Hotel remains a popular destination, known for its historical significance, ghost stories, and luxurious accommodations. Learn more at <a href="https://www.stanleyhotel.com/">www.stanleyhotel.com</a></p>
+            
+        </section>
+
+        <section id="Crescent">
+            <h2>2. The Crescent Hotel</h2>
+            <figure>
+                <img src="assets/hotel-bar.jpg" alt="an old fashioned hotel bar">
+                <figcaption>
+                    Photo by <a href="https://www.pexels.com/photo/bar-in-hotel-5371919/">cottonbro studio</a> 
+                </figcaption>
+            </figure>
+            <p>The Crescent Hotel, located in Eureka Springs, Arkansas, is a historic property with a rich and eerie past. Built in 1886, it was initially a luxury resort designed to attract wealthy visitors seeking the healing properties of the area's natural springs. Its grand Victorian architecture and scenic Ozark Mountain setting quickly made it a popular destination. Over the years, the Crescent has served various purposes, including a women's college and, more infamously, a "cancer hospital" in the 1930s run by Norman Baker, a fraudulent doctor who claimed to cure cancer with questionable methods. His unethical practices left a lasting shadow over the hotel's history. Known today as one of the most haunted hotels in America, the Crescent draws visitors with its ghost tours and paranormal lore, alongside its luxurious accommodations and stunning views. Learn more at <a href="https://crescent-hotel.com/?gad_source=1&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkOOe_UHbCv_MH5sMUY0z1pz7Ldo_6ChEN7ood5XVDWyIm08o31wgf7gaAo-OEALw_wcB">crescent-hotel.com</a></p>
+            
+        </section>
+
+        <section id="Chelsea">
+            <h2>3. The Chelsea Hotel</h2>
+            <figure>
+                <img src="assets/reception-desk.jpg" alt="Close-up of an antique reception desk">
+                <figcaption>
+                    Photo by <a href="https://www.pexels.com/photo/reception-desk-with-antique-hotel-bell-3771110/">Andrea Piacquadio</a>
+                </figcaption>
+            </figure>
+            <p>The Chelsea Hotel, located in Manhattan, is not only famous for its cultural and artistic legacy but also for its eerie connections to the paranormal. Built in the late 19th century, the hotel became a haven for creative minds, but over the years, it has also gained a reputation for being haunted. Guests and residents have reported ghostly encounters with figures believed to be former tenants, including writer Dylan Thomas, who died shortly after staying there, and Nancy Spungen, whose tragic death in the hotel added to its dark lore. Strange occurrences like flickering lights, sudden temperature drops, and unexplained noises have fueled the hotel's haunted reputation. These paranormal stories, combined with its bohemian past, give the Chelsea an air of mystery that continues to intrigue visitors and ghost enthusiasts alike. Learn more at <a href="https://hotelchelsea.com/?gad_source=1&gclid=Cj0KCQjwo8S3BhDeARIsAFRmkOPGbgwt4TgBtDN9_3Gd7RveAISKMN7K3_BHfutxs_FsSfflugHS3NoaAq6NEALw_wcB">hotelchelsea.com</a></p>
+            
+        </section>
+        
+        
+    </main>
+    
+    <footer>
+        <ul>
+            <li>
+                <h2 class="footer-header">Information</h2>
+                <p>Welcome to our website! We're dedicated to providing you with the best content, services, and experiences to meet your needs. Explore our offerings, stay updated with the latest news, and feel free to reach out if you have any questions. We're here to help!</p>
+            </li>
+            <li>
+                <h2 class="footer-header">Links</h2>
+                <p><a href="">Privacy Policy</a></p>
+                <p><a href="">Terms of use</a></p>
+                <p><a href="">Accessibility</a></p>
+            </li>
+        </ul>
+        <p class="copyright">Copyright &copy; <script>document.write(new Date().getFullYear())</script>, Southern Alberta Institute of Technology</p>
+    </footer>
+
+    
+
+
+</body>
+</html>

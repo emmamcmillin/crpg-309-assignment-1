@@ -1,0 +1,327 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #bd8a8a;
+    color: #240000;
+    font-family: "Mulish";
+}
+
+/* Navigation menu */
+
+header {
+    position: relative;
+}
+
+nav {
+    background-color: #3a0000;
+    padding: 2vh;
+    font-family: "Mulish";
+    display: flex;
+    justify-content: center;
+    font-size: 3ch;
+}
+
+nav a {
+    text-decoration: none; 
+    color: white;          
+    margin: 0 20px;        
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/*darkmode styling*/
+body.dark-mode {
+    background-color: #1f0000;
+    color: #ffffff;
+}
+
+body.dark-mode figcaption {
+    color: #ffffff;
+}
+
+body.dark-mode figcaption a {
+    color: #ffffff;
+}
+
+body.dark-mode figcaption a:hover {
+    color: rgb(175, 8, 8);
+}
+
+
+/* The switch container */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:#dba7a7;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+/* Slider's circle (the switch knob) */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+/* When checkbox is checked, move the slider to the right */
+input:checked + .slider {
+    background-color: #ab1a1a;
+}
+
+/* Move the knob when checked */
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/*make the switch look rounded */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/*styling to hide label text*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+
+/* Hamburger icon styling */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Higher value to ensure it appears on top */
+}
+
+.nav-toggle .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+
+
+
+/* Hero page stuff */
+.hero-image {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    filter: brightness(20%);
+}
+
+
+/* Place text in the middle of the image */
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-family: "Mulish";
+}
+
+/*content stuff*/
+main {
+    max-width: 80ch;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding-top: 20em;
+}
+
+section figure {
+    flex: 1;
+    margin: 0;
+}
+
+section img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 0.9em;
+    color: #240000;
+}
+
+figcaption a{
+    color: #240000;
+}
+
+figcaption a:hover{
+    color: rgb(175, 8, 8);
+}
+
+figure {
+    width: 100%;
+}
+
+section h2{
+    font-size: 3.5em;
+    padding-bottom: 3ch;
+}
+
+section p {
+    font-size: 4ch;
+    padding-top: 5ch;
+}
+
+section p a{
+    color: inherit; /*get parent color*/
+}
+
+section p a:hover{
+    color: rgb(175, 8, 8);
+}
+
+/* Footer styling */
+footer {
+    background-color: #3a0000;
+    color: white;
+    padding: 2rem;
+    margin-top: 10rem;
+    font-family: "Mulish", sans-serif;
+}
+
+/* Align list items horizontally */
+footer ul {
+    display: flex;            
+    flex-wrap: wrap;          
+    justify-content: space-around; 
+    padding: 0;
+    margin: 0;
+    list-style: none;         
+}
+
+/* Footer list items styling */
+footer ul li {
+    flex: 1 1 25%;            
+    margin: 2%;              
+    padding: 2rem;            
+    background-color: #440a0a; 
+    border-radius: 0.5rem;    
+}
+
+/* Responsive text and footer header */
+footer .footer-header {
+    font-size: 1.5em;   
+    margin-bottom: 0.5em;    
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Copyright styling */
+footer .copyright {
+    text-align: center;
+    margin-top: 2rem;         
+    color: #ccc;
+    font-size: 0.9rem;        
+}
+
+/*All media queries*/
+/* Media query for phone screen sizes */
+@media (max-width: 768px) {
+    .nav-toggle {
+        display: flex; /* Show hamburger menu */
+    }
+
+    nav {
+        display: none; /* Hide the navigation links */
+    }
+
+    nav.active {
+        display: flex; /* Show the navigation links when active */
+        flex-direction: column;
+        align-items: center;
+        background-color: #240000;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+    }
+
+    nav a {
+        margin: 10px 0; /* Spacing between vertical links */
+    }
+
+    .hero-text{
+        font-size: 3.2ch;
+    }
+
+    section p{
+        font-size: 3ch;
+    }
+}
+/*media query for tablet and pc */
+@media (min-width: 768px){
+
+    .hero-text{
+        font-size: 6ch;
+    }
+}
